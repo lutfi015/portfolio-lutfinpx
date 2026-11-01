@@ -119,7 +119,7 @@ export default function Portfolio() {
       role: "Logistics & Operations Specialist", 
       org: "INFEST Universitas Airlangga", 
       year: "2022",
-      images: ["/assets/infest-team.jpg"] 
+      images: ["/assets/infest-team.JPG"] 
     }
   ];
 
