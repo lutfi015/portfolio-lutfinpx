@@ -27,6 +27,7 @@ export default function Portfolio() {
     location: "Surabaya, Indonesia",
     email: "LutfiFarhanPrayoga2@Gmail.com",
     linkedin: "https://www.linkedin.com/in/lutfifarhanprayoga/",
+    cvPath: "/CV_Lutfi_Farhan_Prayoga.pdf", // Path ke file CV kamu di folder public/
     gpa: "3.14 / 4.00"
   };
 
@@ -85,7 +86,7 @@ export default function Portfolio() {
       role: "Cloud Computing Path", 
       org: "Bangkit Academy led by Google, GoTo, Traveloka", 
       year: "2024",
-      images: ["/assets/bangkit-team.png"] // Foto slide tim Capstone Bangkit C241-PS409
+      images: ["/assets/bangkit-team.png"]
     },
     { 
       role: "Brand Manager / Creative Lead", 
@@ -165,6 +166,17 @@ export default function Portfolio() {
           <p className="text-slate-300 leading-relaxed max-w-2xl">{profile.bio}</p>
           
           <div className="flex flex-wrap gap-4 pt-2">
+            {/* Tombol Download CV */}
+            <a 
+              href={profile.cvPath} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              download
+              className="flex items-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-xl text-sm transition shadow-lg shadow-blue-600/20 active:scale-95"
+            >
+              <FileText className="w-4 h-4 text-white" /> Download CV
+            </a>
+
             <a 
               href={profile.linkedin} target="_blank" rel="noreferrer"
               className="flex items-center gap-2 px-4 py-2.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl text-sm transition"
