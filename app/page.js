@@ -93,8 +93,8 @@ export default function Portfolio() {
       org: "Kurangwaktu", 
       year: "2024",
       images: [
-        "/assets/kurangwaktu-1.jpeg",
-        "/assets/kurangwaktu-2.jpeg"
+        "/assets/kurangwaktu-1.jpg",
+        "/assets/kurangwaktu-2.jpg"
       ]
     },
     { 
